@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BlogNeutrix Admin Dashboard</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🛠 BlogNeutrix Admin Panel</h1>
+
+        <div class="admin-header">
+
+            <p>
+                Logged in as:
+                <strong id="adminEmail"></strong>
+            </p>
+
+            <button id="logoutBtn">Logout</button>
+
+        </div>
+
+        <hr>
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Blog Title">
+
+        <input
+            type="text"
+            id="category"
+            placeholder="Category">
+
+        <input
+            type="text"
+            id="image"
+            placeholder="Image URL">
+
+        <textarea
+            id="content"
+            rows="8"
+            placeholder="Write your blog here..."></textarea>
+
+        <button id="publishBtn">
+            Publish Blog
+        </button>
+
+        <hr>
+
+        <h2>Published Blogs</h2>
+
+        <div id="blogList"></div>
+
+    </div>
+
+    <script type="module" src="admin.js"></script>
+
+</body>
+
+</html>

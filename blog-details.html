@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blog Details</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<img id="blogImage">
+
+<h1 id="blogTitle"></h1>
+
+<p id="blogCategory"></p>
+
+<p id="blogContent"></p>
+
+</div>
+
+<script>
+
+const blog = JSON.parse(localStorage.getItem("selectedBlog"));
+
+document.getElementById("blogImage").src = blog.image;
+
+document.getElementById("blogTitle").textContent = blog.title;
+
+document.getElementById("blogCategory").textContent = blog.category;
+
+document.getElementById("blogContent").textContent = blog.content;
+
+</script>
+
+</body>
+
+</html>

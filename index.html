@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BlogNeutrix | Modern Blogging Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+
+    <i class="fa-solid fa-pen-nib"></i>
+
+    <h2>
+        <span class="blog">Blog</span><span class="ify">Neutrix</span>
+    </h2>
+
+          </div>
+
+        <nav>
+
+            <a href="#">Home</a>
+
+            <a href="#categories">Categories</a>
+
+            <a href="#featured">Featured</a>
+
+            <a href="#blogs">Blogs</a>
+
+            <a href="#about">About</a>
+
+            <a href="#contact">Contact</a>
+            <a href="auth.html" class="login-btn">Login</a>
+            <a href="#" id="logoutBtn" class="logout-btn">Logout</a>
+            <a href="#" id="logoutBtn" class="logout-btn">Logout</a>
+            <span id="userName" class="user-name"></span>
+
+        </nav>
+        <div class="user-info">
+
+    <span id="welcomeUser"></span>
+
+    <a href="#" id="logoutBtn" class="logout-btn">Logout</a>
+
+         </div>
+
+        <div class="header-right">
+
+            <div class="search-box">
+
+                <input type="text" id="search" placeholder="Search blogs...">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+
+            <button id="darkMode">
+
+                🌙
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+
+                Discover Stories, Ideas & Inspiration
+
+            </h1>
+
+            <p>
+
+                Read thousands of articles on Technology, Business,
+                Programming, Health, Travel and much more.
+
+            </p>
+
+            <a href="#blogs" class="btn">
+
+                Explore Blogs
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories" id="categories">
+
+    <h2>Popular Categories</h2>
+    <p>Browse articles by your favourite topics.</p>
+
+    <div class="category-slider">
+
+        <button class="slider-btn" id="leftBtn">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="cat-box" id="catBox">
+
+            <div class="category-card active" data-category="All">
+                <i class="fas fa-th-large"></i>
+                <h3>All</h3>
+            </div>
+
+            <div class="category-card" data-category="Technology">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Technology</h3>
+            </div>
+
+            <div class="category-card" data-category="Programming">
+                <i class="fas fa-code"></i>
+                <h3>Programming</h3>
+            </div>
+
+            <div class="category-card" data-category="Travel">
+                <i class="fas fa-plane"></i>
+                <h3>Travel</h3>
+            </div>
+
+            <div class="category-card" data-category="Business">
+                <i class="fas fa-briefcase"></i>
+                <h3>Business</h3>
+            </div>
+
+            <div class="category-card" data-category="Health">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Health</h3>
+            </div>
+
+            <div class="category-card" data-category="Education">
+                <i class="fas fa-book"></i>
+                <h3>Education</h3>
+            </div>
+
+        </div>
+
+        <button class="slider-btn" id="rightBtn">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+</section>
+
+    <!-- ================= FEATURED ================= -->
+
+    <section class="featured" id="featured">
+
+        <h2>
+
+            Featured Article
+
+        </h2>
+
+        <div class="featured-container">
+
+            <div class="featured-image">
+
+                <img src="https://picsum.photos/700/450?random=10" alt="">
+
+            </div>
+
+            <div class="featured-content">
+
+                <span class="tag">
+
+                    Technology
+
+                </span>
+
+                <h2>
+
+                    Artificial Intelligence Will Change Everything
+
+                </h2>
+
+                <p>
+
+                    Artificial Intelligence is transforming industries
+                    around the world. From healthcare and finance to
+                    education and transportation, AI is helping people
+                    work smarter and solve complex problems faster than
+                    ever before.
+
+                </p>
+
+                <a href="ai.html">Read More →</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= BLOGS ================= -->
+
+    <section class="blogs">
+
+        <h2>
+
+            Latest Articles
+
+        </h2>
+
+        <div class="blog-container" id="blogs">
+
+            <!-- Blog 1 -->
+
+            <div class="card">
+
+                <img src="https://picsum.photos/400/250?1">
+
+                <div class="content">
+
+                    <span class="tag">
+
+                        Programming
+
+                    </span>
+
+                    <h3>
+
+                        Learn HTML & CSS in 30 Days
+
+                    </h3>
+
+                    <p>
+
+                        Master the basics of modern web development with
+                        easy projects and practical examples.
+
+                    </p>
+
+                    <a href="programming.html">Read More →</a>
+
+                </div>
+
+            </div>
+
+            <!-- Blog 2 -->
+
+            <div class="card">
+
+                <img src="https://picsum.photos/400/250?2">
+
+                <div class="content">
+
+                    <span class="tag">
+
+                        Travel
+
+                    </span>
+
+                    <h3>
+
+                        Top 10 Places to Visit in 2026
+
+                    </h3>
+
+                    <p>
+
+                        Explore beautiful destinations around the world
+                        for your next unforgettable vacation.
+
+                    </p>
+
+                    <a href="travel.html">Read More →</a>
+
+                </div>
+
+            </div>
+
+            <!-- Blog 3 -->
+
+            <div class="card">
+
+                <img src="https://picsum.photos/400/250?3">
+
+                <div class="content">
+
+                    <span class="tag">
+
+                        Health
+
+                    </span>
+
+                    <h3>
+
+                        Daily Habits for a Healthy Lifestyle
+
+                    </h3>
+
+                    <p>
+
+                        Improve your health with simple daily habits,
+                        exercise routines and healthy eating.
+
+                    </p>
+
+                    <a href="health.html">Read More →</a>
+
+                </div>
+
+            </div>
+                        <!-- Blog 4 -->
+
+            <div class="card">
+
+                <img src="https://picsum.photos/400/250?4" alt="Business">
+
+                <div class="content">
+
+                    <span class="tag">Business</span>
+
+                    <h3>Grow Your Startup Successfully</h3>
+
+                    <p>
+                        Learn practical business strategies to build,
+                        manage and scale your startup effectively.
+                    </p>
+
+                    <a href="business.html">Read More →</a>
+
+                </div>
+
+            </div>
+
+            <!-- Blog 5 -->
+
+            <div class="card">
+
+                <img src="https://picsum.photos/400/250?5" alt="Technology">
+
+                <div class="content">
+
+                    <span class="tag">Technology</span>
+
+                    <h3>Top Programming Languages in 2026</h3>
+
+                    <p>
+                        Discover the most popular programming languages
+                        every developer should learn this year.
+                    </p>
+
+                    <a href="technology.html">Read More →</a>
+
+                </div>
+
+            </div>
+
+            <!-- Blog 6 -->
+
+            <div class="card">
+
+                <img src="https://picsum.photos/400/250?6" alt="Education">
+
+                <div class="content">
+
+                    <span class="tag">Education</span>
+
+                    <h3>Best Online Learning Platforms</h3>
+
+                    <p>
+                        Improve your skills with top online courses and
+                        certification platforms.
+                    </p>
+
+                    <a href="education.html">Read More →</a>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="pagination">
+
+    <button id="prevBtn">← Previous</button>
+
+    <div id="pageNumbers"></div>
+
+    <button id="nextBtn">Next →</button>
+
+</div>
+
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <h2>Subscribe to Our Newsletter</h2>
+
+        <p>
+            Get the latest articles and updates delivered directly to
+            your inbox.
+        </p>
+
+        <form>
+
+            <input type="email"
+                placeholder="Enter your Email">
+
+            <button>
+
+                Subscribe
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+        <div class="about-text">
+
+            <h2>About BlogNeutrix</h2>
+
+            <p>
+
+                BlogNeutrix is a modern blogging platform designed for
+                readers who love quality content. We publish articles on
+                technology, programming, business, travel, health,
+                education and many more topics.
+
+            </p>
+
+            <p>
+
+                Our goal is to inspire people with informative,
+                practical and engaging articles every day.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+
+            We'd love to hear from you.
+
+        </p>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Your Name"
+                required>
+
+            <input
+                type="email"
+                placeholder="Email Address"
+                required>
+
+            <input
+                type="text"
+                placeholder="Subject">
+
+            <textarea
+                rows="6"
+                placeholder="Write your message..."
+                required></textarea>
+
+            <button>
+
+                Send Message
+
+            </button>
+
+        </form>
+
+    </section>
+    <!-- ================= PREPARED BY ================= -->
+
+<section class="developer">
+
+    <div class="developer-card">
+
+        <img src="juhi.jpg" alt="Developer Photo">
+
+        <h3>Juhi Mehta (Janvi)</h3>
+
+        <h4>Founder</h4>
+
+        <!--<p>
+            Passionate about creating modern, responsive, and user-friendly
+            websites and software solutions. Specializing in web development,
+            UI/UX design, and custom business applications.
+        </p>-->
+
+        <div class="developer-social">
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+            <a href="#"><i class="fab fa-github"></i></a>
+
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+
+                <h2>BlogNeutrix</h2>
+
+                <p>
+
+                    Read. Learn. Grow.
+
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="#">Home</a>
+
+                <a href="#categories">Categories</a>
+
+                <a href="#featured">Featured</a>
+
+                <a href="#blogs">Blogs</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+            <div class="footer-social">
+
+                <h3>Follow Us</h3>
+
+                <a href="#"><i class="fab fa-facebook"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+
+            © 2026 BlogNeutrix. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <!-- Scroll to Top -->
+
+    <button id="topBtn">
+
+        <i class="fas fa-arrow-up"></i>
+
+    </button>
+
+    <script type="module" src="script.js"></script>
+<script type="module" src="blog.js"></script>
+
+</body>
+
+</html>
