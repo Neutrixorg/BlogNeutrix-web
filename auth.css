@@ -1,60 +1,78 @@
-body{
-    font-family:Arial;
-    background:linear-gradient(135deg,#2563eb,#1e293b);
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin:0;
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2563eb, #1e293b);
+    margin: 0;
+    padding: 0;
 }
 
-.container{
-    width:100%;
+/* Updated container to handle full-screen centering */
+.container {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    min-height: 100vh;        /* Spans full screen height */
+    width: 100%;
+    padding: 20px;            /* Padding so it doesn't hit edges on mobile */
+    box-sizing: border-box;
 }
 
-.box{
-    width:350px;
-    background:#fff;
-    padding:30px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.3);
+.box {
+    width: 100%;
+    max-width: 380px;         /* Making it fully responsive */
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+    box-sizing: border-box;
 }
 
-.box h2{
-    margin-bottom:20px;
+.box h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #1e293b;
 }
 
-.box input{
-    width:100%;
-    padding:12px;
-    margin:10px 0;
-    border:1px solid #ccc;
-    border-radius:8px;
+.box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    box-sizing: border-box;   /* Prevents inputs from overflowing the card */
+    font-size: 14px;
 }
 
-.box button{
-    width:100%;
-    padding:12px;
-    background:#2563eb;
-    color:#fff;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:16px;
+.box button {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.2s ease;
 }
 
-.box button:hover{
-    background:#1e40af;
+.box button:hover {
+    background: #1e40af;
 }
 
-#toggleText{
-    margin-top:15px;
-    font-size:14px;
+#toggleText {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #64748b;
 }
 
-#toggleText span{
-    color:#2563eb;
-    cursor:pointer;
-    font-weight:bold;
+#toggleText span {
+    color: #2563eb;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#toggleText span:hover {
+    text-decoration: underline;
 }

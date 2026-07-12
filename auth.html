@@ -1,41 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Login / Register | BlogNeutrix</title>
-
-<link rel="stylesheet" href="auth.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register | BlogNeutrix</title>
+    <link rel="stylesheet" href="auth.css">
 </head>
-
 <body>
 
 <div class="container">
-
     <div class="box">
-
         <h2 id="formTitle">Login</h2>
-
         <input type="text" id="name" placeholder="Full Name" style="display:none;">
-
         <input type="email" id="email" placeholder="Email">
-
         <input type="password" id="password" placeholder="Password">
-
         <button onclick="handleAuth()">Submit</button>
-
         <p id="toggleText">
-            Don't have an account?
+            Don't have an account? 
             <span onclick="toggleForm()">Register</span>
         </p>
-
     </div>
-
 </div>
 
 <script type="module" src="auth.js"></script>
-
 </body>
 </html>
