@@ -14,6 +14,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+<<<<<<< HEAD
+
+=======
+>>>>>>> 27c468a (Remove npm build step for static site)
+
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
